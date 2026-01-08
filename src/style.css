@@ -1,0 +1,36 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100dvh;
+  background-image: url('../assets/backgrounds/main.png');
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  pointer-events: none;
+  user-select: none;
+  transform-origin: center;
+  will-change: transform;
+}
