@@ -33,3 +33,14 @@ Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드�
       - 배지의 사이즈 비율 범위: `90%` 이상 `115%` 이하의 무작위 비율
       - 배지의 이미지 주소: `./sounds/hoshino.png`
       - 배지의 음원 주소: `./sounds/hoshino.wav`
+
+## 저작권 정보
+
+Cursor is an integrated development environment(IDE) developed by Anysphere.
+© Anysphere, Inc.
+
+Koishi Komeiji(古明地こいし) is a character from Touhou Project.
+© 上海アリス幻樂団.
+
+Hoshino Takanashi(小鳥遊ホシノ) is a character from Blue Archive.
+© NEXON Korea Corp. & NEXON GAMES Co., Ltd.
