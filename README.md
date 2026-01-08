@@ -9,8 +9,12 @@ Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드�
 ## 요구사항 정리
 
 - 클리커 앱 구현
-  - 클릭 영역 정의
-    - `./backgrounds/main.png`를 바둑판 타일 형식의 배경으로 사용한다.
+  - 환경 정의
+    - Vite + VanillaJS로 진행.
+    - JavaScript 파일이 저장되는 곳은 `./src` 아래.
+    - HTML 파일과 CSS 파일이 저장되는 곳은 `.`.
+  - 클릭 영역 (`body`) 정의
+    - `./assets/backgrounds/main.png`를 바둑판 타일 형식의 배경으로 사용한다.
     - 스크린 전체를 클릭할 수 있다. 즉, 클릭 영역은 `width: 100vw`이고, `height: 100dvh`이다.
     - 오버플로우된 영역은 전부 `hidden` 처리한다. 즉, `overflow: hidden`이다.
   - 클릭 시 발생하는 일 정의
@@ -21,18 +25,18 @@ Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드�
     - Cursor 배지
       - 발생 확률: `90%`
       - 배지의 사이즈 비율 범위: `80%` 이상 `125%` 이하의 무작위 비율
-      - 배지의 이미지 주소: `./sounds/cursor.png`
-      - 배지의 음원 주소: `./sounds/cursor.m4a`
+      - 배지의 이미지 주소: `./assets/sounds/cursor.png`
+      - 배지의 음원 주소: `./assets/sounds/cursor.m4a`
     - 코이시 배지
       - 발생 확률: `5%`
       - 배지의 사이즈 비율 범위: `90%` 이상 `115%` 이하의 무작위 비율
-      - 배지의 이미지 주소: `./sounds/koishi.png`
-      - 배지의 음원 주소: `./sounds/koishi.m4a`
+      - 배지의 이미지 주소: `./assets/sounds/koishi.png`
+      - 배지의 음원 주소: `./assets/sounds/koishi.m4a`
     - 호시노 배지
       - 발생 확률: `5%`
       - 배지의 사이즈 비율 범위: `90%` 이상 `115%` 이하의 무작위 비율
-      - 배지의 이미지 주소: `./sounds/hoshino.png`
-      - 배지의 음원 주소: `./sounds/hoshino.m4a`
+      - 배지의 이미지 주소: `./assets/sounds/hoshino.png`
+      - 배지의 음원 주소: `./assets/sounds/hoshino.m4a`
 
 ## 저작권 정보
 
