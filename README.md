@@ -94,6 +94,19 @@ Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드�
     - `./src/badgeSpawner.js`: 배지를 붙이는 기능과 관련된 모듈.
     - `./src/main.js`: 모듈 import와 초기화만 담당하게 된 모듈. 즉, 이제 엔트리 역할만 수행하는 모듈.
 
+## 2차 실행 이후 Agent에게 피드백 제공
+
+- 절대 경로를 이용해야 할 것 같아. `./src`가 `^`가 되도록 path aliasing을 `vite.config.js`에 설정해줘. 그리고, `./src`의 각 모듈에서 `import`문에서 상대 경로가 보인다면 설정한 path aliasing에 맞게 바꿔줘.
+
+## 3차 실행
+
+- Cursor IDE의 Auto 모델 Agent에게 `아래 피드백을 바탕으로, 앱을 수정해줘. <README.md (99-100)>`라는 요청을 보냄.
+- Agent는 다음과 같은 작업을 함.
+  - `vite.config.js`에서, `resolve.alias`를 추가하여 `'^'`로 `'./src'`를 접근할 수 있게 Path Aliasing 설정.
+  - `./src/main.js`, `./src/badgePicker.js`, `./src/badges.js`, `./src/badgeSpawner.js`에서 상대 경로로 import된 모듈을 설정한 Path Aliasing으로 변경.
+  - ~~`vite.config.js`에서, `publicDir`를 설정하여 `'assets/'`를 `'/'`로 접근할 수 있게 설정. 이후, `./src/badges.js`와 `./src/style.css`에 설정한 `publicDir`를 반영.~~
+    - 모듈 import에만 그렇게 하길 원했기에, `assets에 대해서까지 그렇게 할 필요는 없어. 나는 module import문에 대해서만 그렇게 하길 원했어. assets의 경우에는, 그냥 /assets/로 시작하는 경로만 넣어주면 돼.`라고 즉각 피드백하여 이 과정은 롤백함.
+
 ## 저작권 정보
 
 Cursor is an integrated development environment(IDE) developed by Anysphere.

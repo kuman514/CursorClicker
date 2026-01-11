@@ -1,5 +1,5 @@
-import { pickBadge } from './badgePicker.js';
-import { randomInRange } from './utils.js';
+import { pickBadge } from '^/badgePicker.js';
+import { randomInRange } from '^/utils.js';
 
 export function spawnBadgeAt(x, y) {
   const badge = pickBadge();

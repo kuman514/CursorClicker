@@ -1,4 +1,4 @@
-import { badges, totalWeight } from './badges.js';
+import { badges, totalWeight } from '^/badges.js';
 
 export function pickBadge() {
   let roll = Math.random() * totalWeight;
