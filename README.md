@@ -1,6 +1,6 @@
 # CursorClicker
 
-Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드는 연습용 앱.
+Cursor 에디터를 활용한 AI 코딩으로 간단한 클리커 앱을 만드는 연습용 앱. [방문하기](https://cursor-clicker-one.vercel.app/)
 
 ## 목적
 
